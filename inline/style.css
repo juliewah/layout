@@ -1,0 +1,484 @@
+header{
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+body{
+    padding-top: 90px;
+}
+nav{
+    height: 90px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 90px;
+    object-fit: contain;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1199px;
+}
+nav ul li{
+    display: inline-block;
+    height: 100%;
+    line-height: 90px;
+    position: relative;
+    color: #505563;
+    font-size: 15px;
+    padding: 0 14px;
+}
+.inside-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    top: 90px;
+    position: absolute;
+    line-height: 2rem;
+    width: 200px;
+    border-radius: 4px;
+    display: none;
+}
+.inside-menu li {
+    font-size: 14px;
+    width: 80%;
+    line-height: 3rem;
+}
+.inside-menu li:not(:last-child){
+    border-bottom: 1px solid #66666645;
+}
+.inside-menu a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #505563;
+    transition: 0.2s;
+}
+.inside-menu a:hover{
+    color: #ff6337;
+}
+nav ul li:hover .inside-menu{
+    display: block;
+}
+.orderBtn{
+    background-color: #da3743;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.orderBtn:before{
+    content: '';
+    background: url(https://inline.imgix.net/images/ot-logo-white.png);
+    background-size: 100%;
+    width: 27px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 10px -4px 0;
+}
+/* 1st div */
+.coverDiv{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 620px;
+    background-image: url(https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_首圖.png);
+    background-size: cover;
+    background-position: center;
+}
+.orange1{
+    color: #ff6337;
+}
+
+.title{
+    font-size: 44px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.ctext{
+    margin-left: 10%;
+}
+.ctext p:first-of-type{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+.ctext p:nth-of-type(2){
+    font-size: 16px;
+    color: #595959;
+    line-height: 2rem;
+    padding-bottom:50px;
+}
+.tryBtn{
+    padding: 12px 20px;
+    background-color: #064c8c;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+/* 2nd div */
+.mapDiv{
+    height: 585px;
+    background-image: url(https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_country.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mtext{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 8%;
+    line-height: 2rem;
+    color: #333333;
+}
+/* 3rd div */
+.productIntro1{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productIntro1 p{
+    line-height: 4.5rem;
+    font-weight: 700;
+    font-size: 26px;
+}
+.productIntro1 :first-child{
+    color: #ec6300;
+}
+.productIntro1 :last-child{
+    color: #252932;
+}
+/* 4th div */
+.productIntro2{
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background1.png);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    
+}
+.book{
+    display: flex;
+    margin: 0 6%;
+    max-width: 1199px;
+}
+.infoImg{
+    flex-basis: 50%;
+}
+.info{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.infoImg img{
+    width: 100%;
+}
+.info span{
+    color: #064c8c;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    padding: 10px;
+}
+.icon img{
+    width: 44px;
+}
+.card:first-of-type img {
+    visibility: hidden;
+}
+.ptext{
+    line-height: 2.2rem;
+}
+.ptext h3{
+    color: #252932;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* 5th div */
+.productIntro3{
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 1710px;
+    
+}
+.book3{
+    flex-direction: row-reverse;
+    max-width: 1199px;
+}
+/* 6th div */
+.partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 6%;
+}
+.partners p{
+    color: #252932;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 100px;
+}
+.partnerTab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tabList{
+    width: 80%;
+    border-bottom: 1px solid #f0f2f7;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+.active{
+    border-bottom: 4px solid #ff6E06;
+    padding: 30px 30px 24px 30px;
+}
+.tabContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tabContent img{
+    width: 224px;
+}
+/* 7th div */
+.interactDiv{
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.testimonial :nth-child(1), .testimonial :nth-child(2) {
+    color: #ff6600;
+    font-size: 26px;
+    font-weight: 700;
+}
+.testimonial :nth-child(3){
+    font-size: 18px;
+    margin-top: 20px;
+}
+.customerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    padding: 50px 40px;
+    text-align: center;
+}
+.customerForm > span{
+    color: #064c8c;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.customerForm > p{
+    line-height: 2rem;
+    color: #252932;
+    padding: 30px 0;
+}
+.customerForm > p >span {
+    color: #ff6600;
+}
+.customerForm > p > span > a {
+    color: #0000FF;
+    text-decoration: none;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+input, select{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dddddd;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+.notBot{
+    width: 60%;
+    border: 1px solid #d3d3d3;
+    background-color: #f9f9f9;
+    display: flex;
+    padding: 4px 10px;
+    justify-content: space-between;
+}
+.check{
+    border: 3px solid #dddddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.notBotLogo{
+    font-size: 8px;
+    line-height: 12px;
+}
+.notBotLogo img{
+    width: 32px;
+}
+.submitBtn{
+    background-color: #EC6337;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    transform: translate(-50%, 0);
+    position: relative;
+    left: 50%;
+}
+.inputHint{
+    font-size: 10px;
+    
+}
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin: 80px 0;
+}
+.contactUs >span{
+    font-size: 30px;
+    color: #252932;
+    font-weight: 700;
+}
+.knowMoreBtn{
+    padding: 20px 30px;
+    background-color: #064c8c;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.contactInfo{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.phone, .customerService{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 20px;
+    line-height: 2rem;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+}
+.phone > a{
+    text-decoration: none;
+}
+.customerService > a{
+    font-weight: 700;
+    padding: 12px 20px;
+    background-color: #ec6337;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.customerService::before{
+    content: '';
+    border-left: 1px solid #cbd1dc;
+    height: 200px;
+    position: absolute;
+    left: 0;
+}
+.contactInfo p:first-of-type{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* footer */
+footer{
+    background-color: #252932;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    gap: 40px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #666666;
+    line-height: 1.5rem;
+}
+nav ul li:hover, footer a:hover {
+    color: #ec6300;
+    cursor: pointer;
+}
+footer p {
+    margin-bottom: 14px;
+}
+.internation > img{
+    width: 90px;
+    height: auto;
+}
+.internation, .sitemap, .cantactus, .social{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    gap: 14px;
+}
+.cu, .language{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.cu a {
+    border: none;
+}
+.ig {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    gap: 10px;
+}
+.ig a{
+    padding: 30px;
+    background-image: url("https://fakeimg.pl/60x60/200");
+}
